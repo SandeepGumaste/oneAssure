@@ -51,7 +51,7 @@ const FamilyMembers: React.FC<FamilyMemberProps> = ({
 
             const adultOneAgeRange = membersArray[0].ageRange
             const adultTwoAgeRange = membersArray[1].ageRange
-            if (adultOneAgeRange && adultTwoAgeRange && adultOneAgeRange.split('-')[0] > adultTwoAgeRange.split('-')[0]) {
+            if (adultOneAgeRange && adultTwoAgeRange && adultOneAgeRange.split('-')[0] < adultTwoAgeRange.split('-')[0]) {
                 alert("Adult 2 age range should be smaller than age Range of adult 1")
                 return
             }
