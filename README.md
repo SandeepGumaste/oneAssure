@@ -44,6 +44,7 @@
 ```
 
 2. "/find_records" takes in member_csv and age ranges as parameters and returns the insurance data for each age range.
+As there was no data provided for children i.e members below 18 years of age, I've assumed the base price of a child's insurance breakup to be 75% of the first adult member.
 
 For example: "/find_records?member_csv=2a,1c&age_range=18-24" returns
 
